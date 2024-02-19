@@ -5,14 +5,15 @@ This repository contains a collection of code snippets written in Rust. These sn
 To run these code snippets on your local machine, you need to have Rust installed. If you haven't installed Rust yet, you can do so by following the official installation guide: [Rust Installation Guide](https://www.rust-lang.org/tools/install)
 
 Once you have Rust installed, you can clone this repository using the following command:
-> git clone https://github.com/amancooks08/rust-practice.git
+```
+git clone https://github.com/amancooks08/rust-practice.git
+```
 
 ## Structure
 The repository has the following structure:
 ```
 ├── Cargo.lock
 ├── Cargo.toml
-├── README.md
 ├── src
 │   ├── arrays_slices.rs
 │   ├── data_types.rs
