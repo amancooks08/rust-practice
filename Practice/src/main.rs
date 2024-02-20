@@ -4,6 +4,7 @@ mod arrays; // Importing the arrays module from arrays.rs file.
 mod tuples; // Importing the tuples module from tuples.rs file.
 mod strings; // Importing the strings module from strings.rs file.
 mod functions; // Importing the functions module from functions.rs file.
+mod if_else; // Importing the if_else module from if_else.rs file.
 
 // When you want to use multiple src files in a single project, 
 // you can use mod to import them, just make sure they have public functions to call.
@@ -20,5 +21,6 @@ fn main() {
     // arrays::run();
     // tuples::run();
     // strings::run();
-    functions::run();
+    // functions::run();
+    if_else::run();
 }
