@@ -1,6 +1,7 @@
 mod data_types; // Importing the data_types module from data_types.rs file.
 mod mutable; // Importing the mutable module from mutable.rs file.
 mod arrays; // Importing the arrays module from arrays.rs file.
+mod tuples; // Importing the tuples module from tuples.rs file.
 
 // When you want to use multiple src files in a single project, 
 // you can use mod to import them, just make sure they have public functions to call.
@@ -14,6 +15,6 @@ fn main() {
 
     // data_types::run();
     // mutable::run();
-    arrays::run();
-
+    // arrays::run();
+    tuples::run();
 }
