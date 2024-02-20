@@ -6,6 +6,7 @@ mod strings; // Importing the strings module from strings.rs file.
 mod functions; // Importing the functions module from functions.rs file.
 mod if_else; // Importing the if_else module from if_else.rs file.
 mod loops; // Importing the loops module from loops.rs file.
+mod match_statements; // Importing the match module from match.rs file.
 
 // When you want to use multiple src files in a single project, 
 // you can use mod to import them, just make sure they have public functions to call.
@@ -24,5 +25,6 @@ fn main() {
     // strings::run();
     // functions::run();
     // if_else::run();
-    loops::run();
+    // loops::run();
+    match_statements::run();    
 }
