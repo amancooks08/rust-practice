@@ -49,4 +49,29 @@ pub fn run() {
     // For now, you can use the unwrap() method to get the value of the Option type.
     // Uncomment the below line to see the output.
     // println!("Last element of numbers: {:?}", numbers.last().unwrap());
+
+
+    // You can also slice the array to get a part of the array.
+    // You can slice the array using the index of the start and end of the slice.
+    // The start index is INCLUSIVE and the end index is EXCLUSIVE.
+    // You have to use the range operator '..' to slice the array.
+
+    let slice = &numbers[1..4]; // This will slice the array from index 1 to 3.
+    println!("slice: {:?}", slice);
+    // The output will be [2, 3, 4].
+
+    // You can also slice the array from the start to a specific index.
+    let slice_start = &numbers[..3]; // This will slice the array from the start to index 2.
+    println!("slice_start: {:?}", slice_start);
+    // The output will be [1, 2, 3].
+
+    // You can also slice the array from a specific index to the end.
+    let slice_end = &numbers[2..]; // This will slice the array from index 2 to the end.
+    println!("slice_end: {:?}", slice_end);
+    // The output will be [3, 4, 5].
+
+    // You can also slice the array to get the whole array.
+    let slice_whole = &numbers[..]; // This will slice the whole array.
+    println!("slice_whole: {:?}", slice_whole);
+    // The output will be [1, 2, 3, 4, 5].
 }
