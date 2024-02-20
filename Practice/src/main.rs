@@ -3,6 +3,7 @@ mod mutable; // Importing the mutable module from mutable.rs file.
 mod arrays; // Importing the arrays module from arrays.rs file.
 mod tuples; // Importing the tuples module from tuples.rs file.
 mod strings; // Importing the strings module from strings.rs file.
+mod functions; // Importing the functions module from functions.rs file.
 
 // When you want to use multiple src files in a single project, 
 // you can use mod to import them, just make sure they have public functions to call.
@@ -18,5 +19,6 @@ fn main() {
     // mutable::run();
     // arrays::run();
     // tuples::run();
-    strings::run();
+    // strings::run();
+    functions::run();
 }
