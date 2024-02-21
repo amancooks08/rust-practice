@@ -1,8 +1,30 @@
 use std::collections::HashMap;
 
 pub fn run() {
+
+    /*
+        Where vectors store values by an integer index, HashMaps store values by key.
+        HashMap keys can be booleans, integers, strings, or any other type that 
+        implements the Eq and Hash traits. 
+        You can create a HashMap with a certain starting capacity 
+        using HashMap::with_capacity(uint), 
+        or use HashMap::new() to get a HashMap with a default initial capacity (recommended).
+     */
     let mut scores = HashMap::new();
 
+    /*
+        Any type that implements the Eq and Hash traits can be a key in HashMap. 
+        This includes:
+            bool (though not very useful since there are only two possible keys)
+            int, uint, and all variations thereof
+            String and &str (protip: you can have a HashMap keyed by String and call .get() with an &str)
+        
+        ****
+            Note that f32 and f64 do not implement Hash, likely 
+            because floating-point precision errors would make using 
+            them as hashmap keys horribly error-prone.
+        ****
+     */
     scores.insert(String::from("Blue"), 10);
     scores.insert(String::from("Yellow"), 50);
 
