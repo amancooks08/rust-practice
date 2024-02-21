@@ -12,6 +12,7 @@ mod traits; // Importing the traits module from traits.rs file.
 mod enums; // Importing the enums module from enums.rs file.
 mod vectors; // Importing the vectors module from vectors.rs file.
 mod hash_maps; // Importing the hash_maps module from hash_maps.rs file.
+mod options; // Importing the options module from options.rs file.
 
 // When you want to use multiple src files in a single project, 
 // you can use mod to import them, just make sure they have public functions to call.
@@ -36,5 +37,6 @@ fn main() {
     // traits::run();
     // enums::run();
     // vectors::run();
-    hash_maps::run();
+    // hash_maps::run();
+    options::run();
 }
