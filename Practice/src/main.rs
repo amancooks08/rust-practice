@@ -9,6 +9,7 @@ mod loops; // Importing the loops module from loops.rs file.
 mod match_statements; // Importing the match module from match.rs file.
 mod structs; // Importing the structs module from structs.rs file.
 mod traits; // Importing the traits module from traits.rs file.
+mod enums; // Importing the enums module from enums.rs file.
 
 // When you want to use multiple src files in a single project, 
 // you can use mod to import them, just make sure they have public functions to call.
@@ -30,5 +31,6 @@ fn main() {
     // loops::run();
     // match_statements::run();   
     // structs::run(); 
-    traits::run();
+    // traits::run();
+    enums::run();
 }
