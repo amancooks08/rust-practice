@@ -43,6 +43,7 @@ pub fn run () {
 
     // Print debug struct
     println!("{:?}", peter);
+    println!("{}", peter.getDetails());
 
     // Instantiate a `Point`
     let point: Point = Point { x: 10.3, y: 0.4 };
@@ -80,4 +81,16 @@ pub fn run () {
     let Pair(integer, decimal) = pair;
 
     println!("pair contains {:?} and {:?}", integer, decimal);
+}
+
+// Another cool feature is that you can have implementations for structs.
+// This is a way to define functions that take the struct as a parameter.
+// These functions are called methods.
+// You can define methods for the struct within the same impl block as the struct itself.
+// For example lets define an implementation for our Person struct:
+impl Person {
+    // This is a method that takes a reference to the struct as the first parameter.
+    fn getDetails(&self) -> String {
+        format!("{} is {} years old.", self.name, self.age)
+    }
 }
