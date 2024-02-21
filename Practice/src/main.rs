@@ -25,7 +25,7 @@ fn main() {
     // Calling the run function from data_types module.
     // You do it by <module-=name>::<function-name>;
 
-    // data_types::run();
+    data_types::run();
     // mutable::run();
     // arrays::run();
     // tuples::run();
@@ -40,5 +40,5 @@ fn main() {
     // vectors::run();
     // hash_maps::run();
     // options::run();
-    results::run();
+    // results::run();
 }
